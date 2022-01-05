@@ -27,6 +27,7 @@ services:
       - -f=/app
       #- --local
       - --db-schema=app
+      - --batch-size=50 # Change the number of blocks requested in each batch.
 
   graphql-engine:
     image: onfinality/subql-query:latest
